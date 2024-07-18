@@ -1,16 +1,3 @@
-.box1 {
-    padding: 0.5em 1em;
-    margin: 2em 0;
-    background-color: #5989cf;
-    background: #c6e4ff;
-    border-bottom: solid 6px #aac5de;
-    border-radius: 9px;
-}
-.box1 h1 {
-    margin: 0;
-    padding: 0;
-}
-.box1 p {
-    margin: 0; 
-    padding: 0;
+h1 {
+    color: blue;
 }
