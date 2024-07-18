@@ -1,4 +1,4 @@
-.box12{
+.box1 {
     padding: 0.5em 1em;
     margin: 2em 0;
     color: #5989cf;
@@ -6,7 +6,11 @@
     border-bottom: solid 6px #aac5de;
     border-radius: 9px;
 }
-.box12 p {
+.box1 h1 {
+    margin: 0;
+    padding: 0;
+}
+.box1 p {
     margin: 0; 
     padding: 0;
 }
