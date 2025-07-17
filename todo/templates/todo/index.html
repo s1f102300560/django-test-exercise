@@ -11,28 +11,28 @@
 
   <body>
     <div class="box1">
-      <h1>Sample To Do Application</h1>
-      <p>You can submit tasks from the following form.</p>
+      <h1>To Doリスト</h1>
+      <p>以下のフォームから仕事の内容と期日を入力してください。</p>
     </div>
     <form action="{% url 'index' %}" method="post">
       {% csrf_token %}
       <div>
-        <label for="titleInput">Title</label><br>
-        <input id="titleInput" name="title" type="text" placeholder="Input title">
+        <label for="titleInput">やること</label><br>
+        <input id="titleInput" name="title" type="text" placeholder="input">
       </div>
       <div>
-        <label for="dueInput">Due at:</label><br>
+        <label for="dueInput">期日:</label><br>
         <input id="dueInput" name="due_at" type="datetime-local">
       </div>
       <div>
-        <button type="submit">Submit</button>
+        <button type="submit">追加</button>
       </div>
     </form>
     <br>
 
     <div>
-      <a href="{% url 'index' %}?order=due">Sort by Due Date</a> |
-      <a href="{% url 'index' %}?order=post">Sort by Posted Date</a>
+      <a href="{% url 'index' %}?order=due">日付順に並び変える</a> |
+      <a href="{% url 'index' %}?order=post">追加順に並び変える</a>
     </div>
 
     {% for task in tasks %}
